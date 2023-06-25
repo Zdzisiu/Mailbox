@@ -13,27 +13,29 @@ OnAiTalk
 
 RandomTalk:all
 {
+	_possibleMail  = ""
+	_mailArray = ""
+
 	if ARRAYSIZE(currentMail) < max[0]
 	{
-		_mailArray = ""
-
 		if story[1] < 5
 		{
 			_mailArray += ",1"
 		}
-
+		--
 		if story[2] < 3
 		{
 			if story[1] == 5 || story[2] < 2; _mailArray += ",2"
 		}
-
+		--
 		if story[4] < 3
 		{
 			if story[1] == 5 || story[2] < 2; _mailArray += ",4"
 		}
-
+		--
 		_possibleMail = RemoveArrayFromArray(_mailArray,"%(currentMail)")
-		if mode == "1" || (story[1] == 5 && story[2] == 3 && story[4] == 3); _possibleMail += ",3,5,6"
+		if mode == "1" || (story[1] == 5 && story[2] == 3 && story[4] == 3); _possibleMail ,= (3,5,6)
+		--
 		_newMail = ANY(_possibleMail)
 
 		if _newMail != ""
