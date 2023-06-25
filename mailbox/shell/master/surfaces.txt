@@ -25,13 +25,13 @@ surface0
 
 	animation1.interval,never
 	animation1.pattern0,overlay,11,100,0,0
-	animation1.pattern0,stop,0
-	animation1.pattern1,overlay,14,100,0,0
-	animation1.pattern1,overlay,11,100,0,0
-	animation1.pattern1,overlay,12,100,0,0
-	animation1.pattern1,overlay,13,100,0,0
-	animation1.pattern1,overlay,15,100,0,0
-	animation1.pattern1,overlay,13,100,0,0
+	animation1.pattern1,stop,0
+	animation1.pattern2,overlay,14,100,0,0
+	animation1.pattern3,overlay,11,100,0,0
+	animation1.pattern4,overlay,12,100,0,0
+	animation1.pattern5,overlay,13,100,0,0
+	animation1.pattern6,overlay,15,100,0,0
+	animation1.pattern7,overlay,13,100,0,0
 
 	animation2.interval,never
 	animation2.pattern0,overlay,13,0,0,0
@@ -41,40 +41,40 @@ surface0
 
 	animation4.interval,never
 	animation4.pattern0,overlay,20,70,0,0
-	animation4.pattern0,stop,3
-	animation4.pattern1,overlay,21,70,0,0
-	animation4.pattern1,overlay,20,70,0,0
-	animation4.pattern1,overlay,22,70,0,0
-	animation4.pattern1,overlay,23,70,0,0
-	animation4.pattern1,overlay,24,70,0,0
-	animation4.pattern1,overlay,25,70,0,0
-	animation4.pattern1,overlay,26,70,0,0
-	animation4.pattern1,overlay,25,70,0,0
+	animation4.pattern1,stop,3
+	animation4.pattern2,overlay,21,70,0,0
+	animation4.pattern3,overlay,20,70,0,0
+	animation4.pattern4,overlay,22,70,0,0
+	animation4.pattern5,overlay,23,70,0,0
+	animation4.pattern6,overlay,24,70,0,0
+	animation4.pattern7,overlay,25,70,0,0
+	animation4.pattern8,overlay,26,70,0,0
+	animation4.pattern9,overlay,25,70,0,0
 
 	animation5.interval,never
 	animation5.pattern0,overlay,25,0,0,0
 
 	animation6.interval,never
 	animation6.pattern0,overlay,13,100,0,0
-	animation6.pattern0,stop,2
-	animation6.pattern1,overlay,15,100,0,0
-	animation6.pattern1,overlay,13,100,0,0
-	animation6.pattern1,overlay,12,100,0,0
-	animation6.pattern1,overlay,11,100,0,0
-	animation6.pattern1,overlay,14,100,0,0
-	animation6.pattern1,overlay,11,100,0,0
+	animation6.pattern1,stop,2
+	animation6.pattern2,overlay,15,100,0,0
+	animation6.pattern3,overlay,13,100,0,0
+	animation6.pattern4,overlay,12,100,0,0
+	animation6.pattern5,overlay,11,100,0,0
+	animation6.pattern6,overlay,14,100,0,0
+	animation6.pattern7,overlay,11,100,0,0
 
 	animation7.interval,never
 	animation7.pattern0,overlay,25,70,0,0
-	animation7.pattern0,stop,3
-	animation7.pattern1,overlay,26,70,0,0
-	animation7.pattern1,overlay,25,70,0,0
-	animation7.pattern1,overlay,24,70,0,0
-	animation7.pattern1,overlay,23,70,0,0
-	animation7.pattern1,overlay,22,70,0,0
-	animation7.pattern1,overlay,20,70,0,0
-	animation7.pattern1,overlay,21,70,0,0
-	animation7.pattern1,overlay,20,70,0,0
+	animation7.pattern1,stop,3
+	animation7.pattern2,overlay,26,70,0,0
+	animation7.pattern3,overlay,25,70,0,0
+	animation7.pattern4,overlay,24,70,0,0
+	animation7.pattern5,overlay,23,70,0,0
+	animation7.pattern6,overlay,22,70,0,0
+	animation7.pattern7,overlay,20,70,0,0
+	animation7.pattern8,overlay,21,70,0,0
+	animation7.pattern9,overlay,20,70,0,0
 }
 
 //—————————————————————————————— Kero surfaces ——————————————————————————————
@@ -86,14 +86,14 @@ surface10
 
 	animation1.interval,never
 	animation1.pattern0,overlay,30,100,0,0
-	animation1.pattern0,stop,0
-	animation1.pattern1,overlay,31,100,0,0
-	animation1.pattern1,overlay,32,100,0,0
-	animation1.pattern1,overlay,33,100,0,0
-	animation1.pattern1,overlay,34,100,0,0
-	animation1.pattern1,overlay,35,100,0,0
-	animation1.pattern1,overlay,36,100,0,0
-	animation1.pattern1,overlay,35,100,0,0
+	animation1.pattern1,stop,0
+	animation1.pattern2,overlay,31,100,0,0
+	animation1.pattern3,overlay,32,100,0,0
+	animation1.pattern4,overlay,33,100,0,0
+	animation1.pattern5,overlay,34,100,0,0
+	animation1.pattern6,overlay,35,100,0,0
+	animation1.pattern7,overlay,36,100,0,0
+	animation1.pattern8,overlay,35,100,0,0
 }
 
 
@@ -131,11 +131,11 @@ surface102
 
 	animation1.interval,never
 	animation1.pattern0,overlay,203,120,0,0
-	animation1.pattern0,overlay,204,120,0,0
-	animation1.pattern0,overlay,205,120,0,0
-	animation1.pattern0,overlay,206,120,0,0
-	animation1.pattern0,overlay,207,120,0,0
-	animation1.pattern0,overlay,203,120,0,0
+	animation1.pattern1,overlay,204,120,0,0
+	animation1.pattern2,overlay,205,120,0,0
+	animation1.pattern3,overlay,206,120,0,0
+	animation1.pattern4,overlay,207,120,0,0
+	animation1.pattern5,overlay,203,120,0,0
 
 	animation2.interval,never
 	animation2.pattern0,overlay,215,0,0,0

@@ -1,5 +1,5 @@
 .gitattributes05bdb783ee6514c8c072e47680af8ff7size=66date=2023-02-12T07:15:01charset=OSNative
-ghost/master/aitalk.dicf5397dbfb468ae5af048cc0338261e84size=1904date=2023-06-25T22:27:37
+ghost/master/aitalk.dicf5397dbfb468ae5af048cc0338261e84size=1904date=2023-06-25T22:35:11
 ghost/master/boot.dicac8bccab7031a6267782b57de110dc12size=1173date=2023-06-25T22:18:01
 ghost/master/descript.txt70a761b168621ce6c5b26597d0dbf6d5size=227date=2023-06-25T22:08:17
 ghost/master/emerg.dicc7cb6eacd3262003fef909c382a6fefesize=351date=2023-06-24T15:42:41
@@ -110,9 +110,8 @@ mail/online7.png896faf7c37b881bc37e4aa1c0d1fa0eesize=1250date=2023-06-23T19:3
 mail/online8.pngebfb13d47b669d594e9c230ebe4ae62bsize=1304date=2023-06-23T19:33:24
 mail/readme.txt4dfbb099eafd3c82e033bf92946d3ce6size=4date=2023-06-23T18:28:43
 mail/sstp.pngdda8475ca1cc262077e796d0647ab830size=1115date=2023-06-23T19:26:51
-readme.txtbab23c30f4c131a0780a6ad39148ecdasize=134date=2023-06-25T17:20:08
+readme.txta722bb060dd274491d466973c9716e93size=134date=2023-06-25T22:37:30
 shell/master/descript.txtbf0ae98805996b9c12bfebbad0a0fe55size=164date=2023-06-20T00:14:21
-shell/master/mailbox.clip1d90ae3e7766c5a28082c1b57b9246bbsize=1293606date=2023-06-24T00:15:30
 shell/master/surface0.png59caedd51ad3936aa1150a80a194f814size=15117date=2023-06-20T22:36:37
 shell/master/surface10.png1f7bad21a7cbcef64be19e9c5b590143size=14888date=2023-06-20T23:50:18
 shell/master/surface100.png12a99bfd02428de0e6da303fbb052fe2size=10558date=2023-06-22T01:45:01
@@ -158,6 +157,6 @@ shell/master/surface33.png4dd7dd0287f0847038ab5fb322b6e87esize=5158date=2023-
 shell/master/surface34.png06e27b27512cfa8ae1eabf35b669f19asize=4558date=2023-06-21T00:11:31
 shell/master/surface35.png0d56fb9e34f6ed57e2999aa710ee1c1csize=4290date=2023-06-21T00:19:44
 shell/master/surface36.pngade70ba076975f152c01203be015771esize=4463date=2023-06-21T00:19:56
-shell/master/surfaces.txt6e704fbe62f6444c0d3e448daef8f636size=5800date=2023-06-25T02:20:06
+shell/master/surfaces.txtd871ca45abd24798c407796a31b8a92dsize=5800date=2023-06-25T22:34:45
 shell/master/surfacetable.txt64022ab54eb82ea22367af01b9a2bdfbsize=83date=2023-06-25T01:11:56
 thumbnail.png82e1984d421478636b1ee3882e4ee265size=37070date=2023-06-25T21:53:22
