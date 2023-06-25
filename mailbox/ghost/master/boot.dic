@@ -38,12 +38,12 @@ OnBoot
 	--
 	OnSurfaceRestore
 	--
-	"%(time)* You approach the mailbox once again."
+	"\1\s[10]\i[0]\0\s[0]\i[0]\i[3]%(time)* You approach the mailbox once again."
 }
 
 OnClose
 {
-	"\0\s[0]%(time)* You leave the field."
+	"\0\s[0]\i[0]\i[3]%(time)* You leave the field."
 	--
 	"\w8\w8\-" //This is what makes the ghost close (after a short pause), do not remove the \- , and MAKE SURE you don't use a \e before this point or it won't work
 }

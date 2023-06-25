@@ -1,6 +1,10 @@
 Charset,UTF-8
 install,740527822
+homeurl_found,1
 surfacecount,44
+homeurl,https://raw.githubusercontent.com/Zdzisiu/Mailbox/main/mailbox/
+update_result,OK(0)
 firstboot,740527828
+update_time,741038332
 commitmemorysize,524531
 lastboot,741038139
