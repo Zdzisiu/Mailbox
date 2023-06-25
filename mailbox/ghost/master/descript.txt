@@ -1,0 +1,16 @@
+charset,UTF-8
+
+name,Mailbox
+type,ghost
+
+shiori,yaya.dll
+
+craftman,Zdzisiu
+craftmanurl,zdzisiu.github.io/ukagaka/
+
+sakura.name,Mailbox
+kero.name,Mail Box
+
+icon,icon.ico
+
+sstp.allowunspecifiedsend,0

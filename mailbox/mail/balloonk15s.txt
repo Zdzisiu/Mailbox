@@ -1,0 +1,14 @@
+arrow0.x,300
+arrow0.y,8
+
+arrow1.x,300
+arrow1.y,300
+
+onlinemarker.y,316
+
+sstpmarker.y,320
+
+sstpmessage.y,320
+sstpmessage.x,230
+
+number.y,330

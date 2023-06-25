@@ -1,0 +1,97 @@
+OnAiTalk
+{
+	if CHAIN.IDName == ""
+	{
+		LastTalk = RandomTalk
+	}
+	else
+	{
+		LastTalk = ChainTalk
+	}
+	LastTalk
+}
+
+RandomTalk:all
+{
+	if ARRAYSIZE(currentMail) < max[0]
+	{
+		_mailArray = ""
+
+		if story[1] < 5
+		{
+			_mailArray += ",1"
+		}
+
+		if story[2] < 3
+		{
+			if story[1] == 5 || story[2] < 2; _mailArray += ",2"
+		}
+
+		if story[4] < 3
+		{
+			if story[1] == 5 || story[2] < 2; _mailArray += ",4"
+		}
+
+		_possibleMail = RemoveArrayFromArray(_mailArray,"%(currentMail)")
+		if mode == "1" || (story[1] == 5 && story[2] == 3 && story[4] == 3); _possibleMail += ",3,5,6"
+		_newMail = ANY(_possibleMail)
+
+		if _newMail != ""
+		{
+			if story[TOINT(_newMail)] == ""; story[TOINT(_newMail)] = 0
+			//story[TOINT(_newMail)]++
+			currentMail ,= _newMail
+
+		}
+
+		if ARRAYSIZE(currentMail) == 1; "\0\s[0]\i[3]\i[1]"
+		else; OnSurfaceRestore
+	}
+}
+
+OnStory : all
+{
+	_num = TOINT(openMail)
+	if story[_num] == ""; story[_num] = 0
+	"\p[2]"
+
+	switch _num-1
+	{
+		"%(ToMySister(story[_num]))"
+		"%(FromADreamer(story[_num]))"
+		"%(ToALostSoul(story[_num]))"
+		"%(AboutACase(story[_num]))"
+		"%(ToThoseIHurt(story[_num]))"
+		"%(ToAnyoneWhoWillListen(story[_num]))"
+	}
+
+	"\x\p[2]\s[-1]"
+
+	_mailNum = ASEARCH(_num,currentMail)
+	currentMail[_mailNum] = ""
+	currentMail = SPLITEX("%(currentMail)",",")
+	if _num != 0 && _num != 3 && _num != 5 && _num != 6
+	{
+		if ASEARCH(_num,oldMail) == -1; oldMail ,= _num
+	}
+
+	if ARRAYSIZE(currentMail) == 0; "\0\s[0]\i[7]\i[6]"
+	else; "\0\s[0]\i[7]\i[2]"
+	story[_num]++
+}
+
+RemoveArrayFromArray
+{
+	_arrayBase = SPLIT(_argv[0],",")
+	_arrayRemove = SPLIT(_argv[1],",")
+
+	for _i=0;_i<ARRAYSIZE(_arrayRemove);_i++
+	{
+		for _j=0;_j<ARRAYSIZE(_arrayBase);_j++
+		{
+			if _arrayRemove[_i] == _arrayBase[_j]; _arrayBase[_j] = ""
+		}
+	}
+
+	SPLITEX("%(_arrayBase)",",")
+}

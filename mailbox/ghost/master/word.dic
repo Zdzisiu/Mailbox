@@ -1,0 +1,232 @@
+//Envelopes/word lists can be so much more than a simple basic list! Here's an example to make you think outside the box a little. To be used with dialogues like:
+//"I spent like 3 hours at the store the other day, looking for a shirt in %(favoredcolors). I found everything but, can you believe it?"
+//It gets fun because if it's a more mundane color, it's absurd they didn't have it. If it's one of the longer entries here though, why were you looking for that!! That's so oddly specific. But more generally, the kinds of things you add and the kinds of things you leave out can say a TON about a character. Like, this envelope here only has blues and grays. But maybe it could only have soft colors, or only very bold colors! Maybe all the entries are very clinical, or maybe they're long and rambly. Envelopes can say SO much about your character, have fun with them!
+/*
+favoredcolors
+{
+	"baby blue"
+	"cerulean"
+	"mint"
+	"misty gray"
+	"soft blue"
+	"ocean blue"
+	"navy blue"
+	"slate"
+	"aqua"
+	"a blue so rich you could get lost in it for hours"
+	"the very same blue of the dress my mother used to wear every sunday"
+	"a soft blue with hints of green"
+	"an electrifying blue that takes your breath away"
+	"a bold and undeniable blue"
+	"a blue often mistaken for purple"
+	"the kind of blue that makes you sad"
+	"a gray that helps you blend into the crowd"
+	"the grayest gray possible"
+	"a gray so gray you can only see gray for days afterwards"
+}
+*/
+
+//And if you're not interested in making word lists like this at all, you can just remove this whole file! Or use it for something else, you do you
+
+time
+{
+	_size = 0
+	if font == ""; font = "default"
+	if fontSize == 0; _size = "default"
+	elseif fontSize > 0; _size = "+"+fontSize
+	else; _size = fontSize
+
+	"\*\![set,balloontimeout,0]\f[name,%(font)]\f[height,%(_size)]"
+}
+
+tag
+{
+	switch _argv[0]
+	{
+		"\f[bold,%(_argv[1])]"
+		"\f[italic,%(_argv[1])]"
+		"\f[strike,%(_argv[1])]"
+		"\f[underline,%(_argv[1])]"
+		"\f[sub,%(_argv[1])]"
+		"\f[sup,%(_argv[1])]"
+	}
+}
+
+ToMySister
+{
+	"\p[2]\b[10]%(time)%(tag(0,1))Dear Sister%(tag(0,0))\n\n[half]"
+	--
+	switch _argv[0]
+	{
+		"It has been 3 months since I married that man. I still feel nothing but resentment towards him, despite our mother assuring me I will eventually come to love him.\n\n[half]At first I really thought that might happen, but with each day and each new bruise I grow less and less convinced that this happy ending of hers exists.\x\p[2]\b[10]%(time)Despite that, I can't leave him.\n\n[half]You know how the settlement is. They'd sooner let me die than leave that man.\n\n[half]I don't know what to do to escape this frustrating routine. The village is not a safe place. If I even utter a complaint, it will all go back to him, and he will be angry.\x\p[2]\b[10]%(time)Maybe I'm overreacting. Maybe that really is how a loving marriage is. He tells me he loves me; he provides me food and a warm place to sleep. Maybe he's right and I deserve it. The entire community agrees with him, after all.\n\n[half]I long for some advice, you'd know best how to hide away from these peering eyes"
+
+		"You were right, despite my initial fear of wild animals, it quickly became clear they will pay me no mind as long as I won't bother them. With that, the nearby woods you recommended became my escape from the judgmental eyes.\n\n[half]I go there almost daily, it's just so peaceful there, so much in fact that more than once I ended up napping under trees.\x\p[2]\b[10]%(time)There are many beautiful plants there, and watching animals brings me peace\n\n[half]In other news, it seems like I caught the attention of someone in the village, thankfully in a good way. Sometime after your letter arrived, I started finding small trinkets and treasures on my windowsill. First was a feather, I thought it was brought by the wind, but it kept happening, and lately, the person even leaves letters. They are not very well written, but they are cute\x\p[2]\b[10]%(time)I'm not sure who is writing them and gathering all the trinkets, but they make me happy none the less, no matter how simple they are. It's now a small collection of pretty rocks, beautiful feathers, flowers and small wooden sculptures. I tried to find out who might leave them, but it never works sadly\x\p[2]\b[10]%(time)However, I'm afraid of the villagers finding out, it would not end well for either of us. Maybe after meeting them I should run away like you did, towards a better life in a city.\n\n[half]I know that even you barely made it, and now they keep even stricter watch, so it might not be possible, at least until they grow too comfortable again\x\p[2]\b[10]%(time)If needed, would you help me plan my escape? The more I think about it, the less I want to live as I'm living now."
+
+		"I think I'm going insane. During my usual forest walk, I saw a strange creature. It was vaguely human, or at least it appeared like that at first glance.\n\n[half]The creature stood on its legs upright and wore clothes, with one visible hand that looked almost human, holding onto a tall staff. However, on second glance, the differences became apparent.\x\p[2]\b[10]%(time)It was covered in what looked like black fur, with feathers mixed in, it wore a mask looking like a boar skull, its clothes looked more like rags. The visible hand was holding a staff made from bones and feathers, while what appeared to be three more arms occasionally emerged from under its cloak. The creature was tall. Its legs were those of an animal.\x\p[2]\b[10]%(time)Yet, I was not afraid in the slightest. Its feathers revealed a rainbow under the black every time the light hit them, and it stood proudly, seemingly lost in thought.\n\n[half]It looked calm, and when it noticed me, it dipped in a graceful bow, and moved on into the deeper parts of the forest.\x\p[2]\b[10]%(time)The whole thing seemed surreal, as if all of that was just some kind of dream or hallucination, yet I could feel the wind on my skin, hear its steps on the forest floor. I recognized its feathers; they seemed identical to those I often found on my windowsill.\x\p[2]\b[10]%(time)My mind is in disarray, but I cannot stop thinking about this creature. Nowadays I find myself hoping to see it once again whenever I find myself back in the woods."
+
+		"I apologize for not being able to contact you sooner; the restrictions became heavier during the past few months.\n\n[half]Soon after sending my previous letter, I meet the creature again. This time, he spoke. It was just a simple greeting, but hearing it speak in a language I recognize was quite shocking. It was shocking enough that I don't think I responded, but he didn't seem to mind, and moved one to where he was heading.\x\p[2]\b[10]%(time)After that it became more frequent, eventually I saw him almost daily. At first we would just exchange greetings, after a few days he stayed longer, and we properly introduced ourselves. His name is Asdel, and he turned out to be a pleasant conversation partner, and the time I spend with him is probably when I feel the most at ease.\x\p[2]\b[10]%(time)I also learned that it was indeed him who left the letters and trinkets, although he cannot leave the forest for long.\n\n[half]When it comes to my life in the village, nothing much changed. My husband is still as he was, and my feelings towards him haven't changed either. The village, however, is more and more suspicious of my excursions to the woods, and I fear what will happen to me, and what might happen when they learn of Asdel.\x\p[2]\b[10]%(time)Asdel is willing to aid my escape when the chance arises. For now, I'm trying to prepare any supplies I might need."
+
+		"The village is becoming dangerous to me. Their suspicions haven't died down as I hoped, and to make the matters worse, I worry I might be pregnant.\x\p[2]\b[10]%(time)Asdel and I have refined the plan. He believes the best course of action would be to go through the forest, where he can lead me with the shortest path to the nearest place where others live. From there, I hope to get help. Asdel won't be able to help me outside a forest, but he said he can appear in dense woods and lead me safely through them if needed.\x\p[2]\b[10]%(time)The restrictions have been relaxed a little, I will be escaping soon. It's still dangerous, but I've got no time to waste. Hopefully, we will meet in the agreed location. If not, I want you to know how thankful I'm for your help and support, even if only through the letters."
+	}
+	--
+	"\n\n[half]%(tag(0,1))%(tag(1,1))Love%(tag(1,0))\nYour Younger Sister%(tag(0,0))"
+}
+
+FromADreamer
+{
+	"\p[2]\b[14]%(time)%(tag(0,1))Dear \_b[img/scribble.png,inline,--option=use_self_alpha]%(tag(0,0))\n\n[half]"
+	--
+	switch _argv[0]
+	{
+		"Yesterday, I dreamed of fire.\n\n[half]It started with me waking up; it was quiet, or well, not even quiet, just entirely silent. I sat up on the bed and looked around. Everything was engulfed in flames, yet it was calm, peaceful; the fire didn't spread more, there was no black smoke, just the tongues of the flames beautifully dancing around me.\x\p[2]\b[14]%(time)I stood up. Everything was bright, but not from the flames. All the walls were white, and so was the light itself. I went into the corridor, and it was the same there. I didn't hear my footsteps, but there was finally a sound, chimes, a very quiet melody driven by wind. On the walls were photos of my friends, of my family, of me. They were the only thing that was covered in ash.\x\p[2]\b[14]%(time)I moved into the kitchen. The walls were still white; the windows went nowhere, just an endless white void, the chimes became louder with each step. The door was not there.\n\n[half]I went to the living room next. The chimes were unbearably loud, and there, in a wall, a carved out square space, with a singular, small, white candle. It seemed to have fallen down from its pedestal, laying on its side. It's flame connecting to the flames covering the house.\x\p[2]\b[14]%(time)I approached it, now standing in the flames. I couldn't feel anything. It was so bright it hurt my eyes. My ears feel like they would start bleeding from the sound of the chimes. I held out my hand and grabbed it. Picked it up and moved to place it down in its place.\n\n[half]The moment it touched the pedestal, all the flames vanished, the light dimmed down; the chimes went quiet.\x\p[2]\b[14]%(time)And I woke up."
+
+		"Yesterday, I dreamed of the end.\n\n[half]I was standing in the middle of the city. It was night, yet there were crowds of people. I was looking at the moon; it was a lunar eclipse, and it was beautiful. I barely registered hearing a news channel, and the cacophony of voices around me, they were talking about the eclipse, I'm not sure why, I was to engrossed in the flash that passed on the blood-red moon, and then, everything imploded.\x\p[2]\b[14]%(time)I woke up again, feeling of my searing flesh and the terrifying flash in the back of my head. I looked around. I was sitting on my bed. Beside me was my friend. I couldn't tell which one, their face changing every time I looked at them.\n\n[half]I looked outside through my window. It was night, and the moon was there, blood red once again. I grabbed my friend's hand, and sat, staring at the moon, and a flash passed through it, and everything imploded again.\x\p[2]\b[14]%(time)And I woke up.\n\n[half]I looked at the clock, 11pm; I looked around my room and at the clock again. It stayed at 11pm. This time I really woke up.\n\n[half]I stood up from my bed and went to my windows.\n\n[half]I saw a blood-red moon."
+
+		"Yesterday, I dreamed of a forest.\n\n[half]The forest was peaceful, birds sung mournful songs and deer stood in apprehension, looking towards two figures.\n\n[half]One figure was a guardian, with black fur and a staff made from bones. Beside him was a shimmering figure of a woman, holding a sleeping child, bundled up in a blanket dripping red.\x\p[2]\b[14]%(time)They were walking along a river of blood, from which hands tried to grab at them and faces silent in a forever scream looked at them with distaste.\n\n[half]They payed them no mind, the tall black figure leading the woman in between the trees.\n\n[half]I followed the river in a direction opposite to where they were heading, and soon I saw an empty village. The moment I stepped outside the woods, everything fell silent.\x\p[2]\b[14]%(time)I was standing in a boundary in between the mournful woods and the empty village. I moved forward, and there were screams.\n\n[half]Screams of agony surrounded me from all sides and I fell on my knees in pain, trying to cover my ears.\n\n[half]And I woke up."
+	}
+	--
+	"\n\n[half]%(tag(0,1))%(tag(1,1))Sincerely%(tag(1,0))\nThe Dreamer%(tag(0,0))"
+}
+
+ToALostSoul: nonoverlap_pool
+{
+	"\p[2]\b[14]%(time)%(tag(0,1))To a Lost Soul%(tag(0,0))\w8\w8\n\n[half]"
+	--
+	{
+		"You don't owe people "
+		--
+		"your health"
+		"love"
+		"compassion"
+		"forgiveness"
+		"your happiness"
+		"your time"
+	}
+	"You can do whatever you set your mind on, believe in yourself"
+	"Belive in yourself"
+	"Be kind to yourself, you are doing your best"
+	"Don't be hard on yourself"
+	"Loving yourself is not selfish"
+	"Don't be afraid to ask for help"
+	"Let yourself prioritize your own happiness"
+	"Strive for progress, not perfection"
+	"Make yourself some tea, take a break"
+	"Take a moment to breathe"
+	"Take some time just for yourself"
+	{
+		"You deserve "
+		--
+		"a break"
+		"love"
+		"compassion"
+		"to heal"
+		"forgive yourself"
+		"selfcare"
+		"patience"
+		"happiness"
+		"good things"
+	}
+	--
+	".\n\n[half]%(tag(0,1))From \_b[img/scribble.png,inline,--option=use_self_alpha]%(tag(0,0))"
+}
+
+AboutACase
+{
+	"\p[2]\b[12]%(time)"
+	--
+	switch _argv[0]
+	{
+		"%(tag(0,1))Incident Details\n\n[half]Date:\_b[img/scribble.png,inline,--option=use_self_alpha]\n\n[half]Location:\_b[img/scribble.png,inline,--option=use_self_alpha],\_b[img/scribble.png,inline,--option=use_self_alpha]%(tag(0,0))\n\n[half]A distress call was received on\_b[img/scribble.png,inline,--option=use_self_alpha]from\_b[img/scribble.png,inline,--option=use_self_alpha],\_b[img/scribble.png,inline,--option=use_self_alpha]. The caller reported finding a camera with disturbing imagery.\x\p[2]\b[12]%(time)%(tag(0,1))Witness Statement:\n\n[half]Witness: \_b[img/scribble.png,inline,--option=use_self_alpha] \_b[img/scribble.png,inline,--option=use_self_alpha]\n\n[half]Statement:%(tag(0,0)) ''I was taking my dog out for a walk in the \_b[img/scribble.png,inline,--option=use_self_alpha] woods, when I stumbled upon the camera, neatly left on a tripod, I looked around for around 10 minutes searching for the owner, and when I didn't find them, I decided to take the camera with me, to look over the photos to see if I can recognize the owner. Our community is small, so I hoped to find them by ''a friend of a friend'' kind of way.''\x\p[2]\b[12]%(time)''If that wouldn't work, I planned to give it to the police so they could find them. However, when I looked over the photos, at first there were mostly of various places, then photos of what appeared to be a woman taken from afar. Soon, the photos turned even more concerning. At first they were from a distance, but with each photo, the person got closer, until one photo was taken in what appeared to be inside the woman's house. The next one was even more disturbing, a close-up photo of the woman sleeping. After seeing that, I snapped back and immediately called the police.''\x\p[2]\b[12]%(time)%(tag(0,1))Investigation and Findings:%(tag(0,0))\n\n[half]1. Upon further inspection, the camera contained image of various people. Each set of images following a pattern of the photographer stalking the victim from afar and gradually getting closer, which eventually leads to a photo of the victim sleeping. Then the images depict the person kidnapped and tied up, and next, gory, disturbing imagery. Each set of photos starts with a place, and ends with a photo of a disturbing, gory form resembling an art installation made from the mangled body of the victim, standing in the place that the first photography depicted.\x\p[2]\b[12]%(time)2. There are a total of 14 depicted victims, however, none of them have been identified. No reports of a missing person matched any of the victims.\n\n[half]3. All depicted locations have been thoroughly searched for any evidence, none have been found, including the last location; the forest the camera has been found in.\x\p[2]\b[12]%(time)4. All the locations the victims were photographed in have been searched and the locals questioned. None have recognized the victim.\n\n[half]5. The houses the victims appeared to have lived in were found either empty or inhabited by completely different people. The owners of the properties have also testified to not recognize any of the people.\x\p[2]\b[12]%(time)%(tag(0,1))Case Status%(tag(0,0)): Unsolved\n\n[half]Despite numerous tries and various methods used, the victims remain unidentified and their bodies missing; the culprit has not been found. The case remains closed until further evidence comes to light."
+
+		"%(tag(0,1))Incident Details\n\n[half]Date:\_b[img/scribble.png,inline,--option=use_self_alpha]\n\n[half]Location:\_b[img/scribble.png,inline,--option=use_self_alpha],\_b[img/scribble.png,inline,--option=use_self_alpha]%(tag(0,0))\n\n[half]A call has been received on\_b[img/scribble.png,inline,--option=use_self_alpha] from mortuary in\_b[img/scribble.png,inline,--option=use_self_alpha],\_b[img/scribble.png,inline,--option=use_self_alpha]. The mortuary workers reported that a body disappeared after autopsy.\x\p[2]\b[12]%(time)%(tag(0,1))Witness Statement:\n\n[half]Witness: \_b[img/scribble.png,inline,--option=use_self_alpha]\_b[img/scribble.png,inline,--option=use_self_alpha]\n\n[half]Statement:%(tag(0,0)) ''It was during our night shift, we were doing an autopsy on an unidentified body to find both the identity and the cause of death. After performing the internal examination, we were discussing the findings and preparing for reconstruction.''\x\p[2]\b[12]%(time)''During that brief moment, we left the examination room for a minute. When we came back, the body was no longer on the examination table. We immediately called the security and checked the cameras; which turned out to have been tampered with. Several cold chambers have also been found open, but no other body was missing.''\x\p[2]\b[12]%(time)%(tag(0,1))Investigation and Findings:%(tag(0,0))\n\n[half]1. There were no signs of breaking and entering.\n\n[half]2. All the personnel have been questioned and searched, yet nothing notable has been found.\n\n[half]3. All the other bodies have been left undisturbed, other than the cold chambers being opened.\n\n[half]4. No further evidence of anyone other than the approved personnel entering the examination room has been found.\x\p[2]\b[12]%(time)%(tag(0,1))Case Status:%(tag(0,0)) Unsolved\n\n[half]Despite efforts, the location of the body is still unknown, no evidence has been found that could lead to the perpetrator or the location of the body. Until further evidence comes to light, the case remains closed."
+
+		"%(tag(0,1))Incident Details\n\n[half]Date: \_b[img/scribble.png,inline,--option=use_self_alpha]\n\n[half]Location: \_b[img/scribble.png,inline,--option=use_self_alpha],\_b[img/scribble.png,inline,--option=use_self_alpha]%(tag(0,0))\n\n[half]A call has been received on \_b[img/scribble.png,inline,--option=use_self_alpha] from a journalist who wanted to investigate \_b[img/scribble.png,inline,--option=use_self_alpha] village. The caller reported ''all the villagers dead and mangled beyond recognition'''.\x\p[2]\b[12]%(time)%(tag(0,1))Witness Statement:\n\n[half]Witness: \_b[img/scribble.png,inline,--option=use_self_alpha] \_b[img/scribble.png,inline,--option=use_self_alpha]\n\n[half]Statement:%(tag(0,0)) ''I heard about it from word of mouth. Apparently, one person run away from them and the word about them being in a cult spread. I thought that a story on a secluded religious village, possibly a cult even, would make for an interesting article.''\x\p[2]\b[12]%(time)''After coming in contact with that person, I managed to get the location of the village. After I came there, all I found were the bodies;\n\n[half]mangled, bloody bodies, so I immediately called the police.''\x\p[2]\b[12]%(time)%(tag(0,1))Investigation and Findings:%(tag(0,0))\n\n[half]1. The \_b[img/scribble.png,inline,--option=use_self_alpha] village has been suspected of being a secluded cult, however no evidence of any harmful activities has been confirmed.\n\n[half]2. The autopsies performed on some of the victims confirmed the wounds to be from some kind of animal, but we were unable to confirm which one exactly. Other autopsies are still pending.\x\p[2]\b[12]%(time)3. Trying to contact the person who gave out the location of the \_b[img/scribble.png,inline,--option=use_self_alpha] village proved fruitless. The number has been deactivated and their apartment abandoned.\n\n[half]4. Only one of the bodies has been left intact; A pregnant woman found in the lake. Her autopsy is pending.\n\n[half]%(tag(0,1))Addendum #1: The body of the woman has disappeared form the morgue, see file nr. \_b[img/scribble.png,inline,--option=use_self_alpha] from \_b[img/scribble.png,inline,--option=use_self_alpha]\x\p[2]\b[12]%(time)%(tag(0,1))Case Status:%(tag(0,0)) Closed\n\n[half]All victims seem to have been killed by animals with the sole exception of the pregnant woman whose cause of death appears to be drowning, the cause of which will be handled in a separate case. All attempts to find the previous resident of the village have been unsuccessful."
+	}
+}
+
+ToThoseIHurt : nonoverlap_pool
+{
+	"\p[2]\b[14]%(time)"
+	--
+	"%(tag(0,1))To the person I wronged%(tag(0,0))\w8\w8\n\n[half]"
+	--
+	"I'm sorry for "
+	"I apologize for "
+	--
+	"not being with you in your times of need"
+	{
+		"spilling coffee on your "
+		--
+		"laptop"
+		"keyboard"
+		"phone"
+		"tablet"
+		"documents"
+		"drawing"
+		"book"
+	}
+	"losing your keys"
+	"deleting that one file"
+	"canceling last minute"
+	"breaking your favorite mug"
+	"being late"
+	"not listening to you"
+	{
+		"forgetting "
+		--
+		"your birthday"
+		"our anniversary"
+		"to tell you"
+	}
+	"the stupid joke I made"
+	"scratching your car"
+	"hurting your feelings"
+	"rejecting your advice"
+	"losing the book you lent me"
+	"screaming at you"
+	"stepping on your foot"
+	"accidentally sending you that email, it was meant for someone else"
+	"lying"
+	"stealing from you"
+	"stalking you"
+	"blackmailing you"
+	"harrassing you"
+	{
+		"breaking into your"
+		--
+		"car"
+		"house"
+	}
+	"taking a life"
+	"injuring you"
+	"cheating on you"
+	--
+	"\n\n[half]%(tag(0,1))From \_b[img/scribble.png,inline,--option=use_self_alpha]%(tag(0,0))"
+}
+
+ToAnyoneWhoWillListen : nonoverlap_pool
+{
+	"\p[2]\b[12]%(time)"
+	--
+	"%(tag(0,1))To anyone willing to listen%(tag(0,0))\w8\w8\n\n[half]"
+	--
+	"I keep switching sugar with salt in the office."
+	"I broke someones heart while pretending to be someone else."
+	"I cheated on my partner."
+	"I spread rumors about a classmate in school because I was jelous of %(ANY('her','him','them'))."
+	"I lied on my CV to get a job"
+	"I keep stealing office supplies"
+	"I hate my partners cooking, but I'm afraid of telling %(ANY('her','him','them'))"
+	"I pretended to be sick to avoid my friend's wedding."
+	"I've been taking money from the cash ragister at my workplace"
+	"I slept with my best friends partner. They are still together and %(ANY('he','she','they')) don't know."
+	"I framed my bully for a crime I committed. %(ANY('he','she','they')) ended up in juvie."
+	"I was a culrit of a hit and run, the person didn't survive"
+	"I killed a person\w8\w8\w8, I don't regret it."
+	"They say the recent missing cases might be a doing of a serial killer. They are right, and they won't find where I hid them."
+	"I framed someone for murder."
+	"I'm behind the recent murders and I can't wait till they find my masterpiece"
+	--
+	"\n\n[half]%(tag(0,1))From \_b[img/scribble.png,inline,--option=use_self_alpha]%(tag(0,0))"
+}
+

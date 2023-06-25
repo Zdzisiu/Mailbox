@@ -1,0 +1,61 @@
+OnKeroMenu : all
+{
+	"\1\s[10]\i[1]\b[%(RAND(8)+8)]%(time)\![set,autoscroll,disable]* You look into the mail box "
+	"\n\n[half]\_q"
+
+	for _a = 0; _a < ARRAYSIZE(oldMail); _a++
+	{
+		_mail = TOINT(oldMail[_a])
+		for _i = 0; _i < story[_mail];_i++
+		{
+			"\__q[OnOldStory," + _mail + "," + _i + "]\_b[img/letter (" + _mail + ").png,inline,--option=use_self_alpha]\__q"
+
+			if _i%4==0 && _i != 0 && _i != story[_mail]-1; "\n"
+		}
+
+		"\n"
+	}
+
+	"\n[half]"
+
+	for _a = 0,_stamp=0; _a < 7; _a++,_stamp++
+	{
+		if story[_a] > 0
+		{
+			if (_a == 1 || _a == 2 || _a == 4)
+			{
+				for _i = 1; _i <= story[_a];_i++,_stamp++
+				{
+					"\_b[img/stamp ("+_a+"."+_i+").png,inline,--option=use_self_alpha]"
+
+					if _stamp%10 == 0 && _stamp > 0; "\n"
+				}
+				_stamp-=1
+			}
+			else
+			{
+				"\_b[img/stamp ("+ _a +").png,inline,--option=use_self_alpha]"
+				if _stamp%10 == 0 && _stamp != 0; "\n"
+			}
+		}
+	}
+	"\n\n[half]\![*]\q[Nevermind,]"
+}
+
+OnOldStory
+{
+	_num = TOINT(reference1)
+
+	if reference0 == "1"
+	{
+		"%(ToMySister(_num))"
+	}
+	elseif reference0 == "2"
+	{
+		"%(FromADreamer(_num))"
+	}
+	elseif reference0 == "4"
+	{
+		"%(AboutACase(_num))"
+	}
+}

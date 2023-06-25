@@ -1,0 +1,163 @@
+.gitattributes05bdb783ee6514c8c072e47680af8ff7size=66date=2023-02-12T07:15:01charset=OSNative
+ghost/master/aitalk.dic4af2279dd7620b6d5071dd3e4c07885dsize=1866date=2023-06-25T21:26:15
+ghost/master/boot.dicdf862acdfaa5d922ac2187e098515811size=1679date=2023-06-25T21:14:23
+ghost/master/descript.txt6b580675df8d4f63df100ff1cdf0880fsize=211date=2023-06-25T21:15:08
+ghost/master/emerg.dicc7cb6eacd3262003fef909c382a6fefesize=351date=2023-06-24T15:42:41
+ghost/master/icon.ico52cfd8066b3482d19aa5d663a70a5b61size=65582date=2023-06-25T21:21:53
+ghost/master/img/letter (1).png94460802275df69919f7777c98fe5556size=5086date=2023-06-23T20:34:06
+ghost/master/img/letter (2).png5df24f6d29c604b6425a03c289d9599bsize=6538date=2023-06-23T20:34:06
+ghost/master/img/letter (3).pnga2613d0ab9f3e71dc682e67216984da0size=5134date=2023-06-23T20:34:06
+ghost/master/img/letter (4).png342ac4d046fe7b1568086e69b6bde5c3size=3779date=2023-06-23T20:34:06
+ghost/master/img/letter (5).png17f8c60cd9831a01b6bad5a815d2e03fsize=3909date=2023-06-23T20:34:06
+ghost/master/img/letter (6).pnga311d502b529c3ca09aaf58bd7f76c28size=2851date=2023-06-23T20:34:06
+ghost/master/img/scribble.pnga79678c24748ede03687a4bcc139899esize=1677date=2023-06-23T20:20:46
+ghost/master/img/stamp (1.1).png6226043a46f5ced592a10d0c7e6ebb03size=2285date=2023-06-25T01:17:24
+ghost/master/img/stamp (1.2).png6651db9d96b807affc52206963378cdfsize=2313date=2023-06-25T01:17:20
+ghost/master/img/stamp (1.3).png0890a062d58556d4bdbcb80175cb316bsize=2446date=2023-06-25T01:17:16
+ghost/master/img/stamp (1.4).pnga5320c71074565202564166e56324b4bsize=2491date=2023-06-25T02:19:38
+ghost/master/img/stamp (1.5).png104a473e5177fa6695fc4c7ba1456f8fsize=2482date=2023-06-25T02:19:41
+ghost/master/img/stamp (2.1).pngce221e2ac768d50f219902ac7b369f2fsize=2030date=2023-06-25T01:17:11
+ghost/master/img/stamp (2.2).png64b67bfd5417be919b208c7b209aee4bsize=2332date=2023-06-25T01:17:14
+ghost/master/img/stamp (2.3).pngafc160114d88bc491f4e0a08c49b1d14size=2193date=2023-06-25T01:17:06
+ghost/master/img/stamp (3).pngab2d7fdf230aa8ecaae7299f9b6899bdsize=2022date=2023-06-25T01:17:08
+ghost/master/img/stamp (4.1).pngdc8707cbce69d312cd7145ca9ebf1121size=1989date=2023-06-25T01:17:03
+ghost/master/img/stamp (4.2).png322005c3ff789a3393da4574d08f09a1size=2218date=2023-06-25T01:17:05
+ghost/master/img/stamp (4.3).png4f5cc29b37f606abf2767c4fd191e7e3size=2184date=2023-06-25T01:17:05
+ghost/master/img/stamp (5).pngab1f2c9b911a1ab9610d8daa29616e91size=1849date=2023-06-25T01:17:04
+ghost/master/img/stamp (6).png80acdae18da83c9b003591bf610c10aesize=1605date=2023-06-25T01:17:04
+ghost/master/kero_menu.dic079663d8673b8dce0648259193b31e44size=1195date=2023-06-25T21:14:20
+ghost/master/meta.dic8c77612a00a3b1cffcfa67327fe8448dsize=3634date=2023-06-24T15:42:20
+ghost/master/mouse.dic06136d80ef7bb38e10b77f0fc4e7ed13size=562date=2023-06-23T20:07:39
+ghost/master/other.dicad13a1ed82249639de34cd44e6817cd5size=5984date=2023-06-23T17:46:32
+ghost/master/sakura_menu.dic3b8f9e19501051a6287ee9c7bc1cc5a7size=3083date=2023-06-25T15:53:42
+ghost/master/word.dic91a664c9ac9e51160951321b14af75bbsize=24305date=2023-06-25T21:13:57
+ghost/master/yaya.dll56e3af56c88e696cea1f39d53b239cefsize=880640date=2022-09-11T01:18:59
+ghost/master/yaya.txt7f81c20ea7788929f2cbb4cbbcf4bf5esize=727date=2023-02-01T10:17:47
+ghost/master/yaya_base/_loading_order.txt9c350c2c9c08f635bff5eaae149af8c8size=103date=2023-04-02T16:34:13
+ghost/master/yaya_base/compatible.dic4f8b1e8c8c08dc44e70b1bd4f52a1affsize=4297date=2023-04-02T16:34:13
+ghost/master/yaya_base/config.dic9dae7f666d2a30ddede6093c7d2a5750size=2627date=2023-04-14T22:03:05
+ghost/master/yaya_base/optional.dicff4da728a656a8aa6a38939e654c51f2size=9953date=2023-04-02T16:34:13
+ghost/master/yaya_base/shiori3.dic1020638d5e3881c23cc9baabc366e730size=52209date=2023-04-02T16:34:13
+ghost/master/yaya_emerg.txt9e43b4696366a536ecc69e45d80e392csize=607date=2023-04-14T21:44:19
+install.txt00e297184e2371babc40d74dff95b570size=60date=2023-06-20T00:11:02
+mail/HandwritingBasics-Regular.ttf05ae891bd9957fa62fdc34eeed41b2c1size=32948date=2023-06-23T18:57:53
+mail/Note this.ttf529255cbe958b9dd5e641ba9faee4e6bsize=52092date=2023-06-23T18:58:53
+mail/arrow0.pngeb9810fb623a5f155c9a96e26a85b8fbsize=626date=2023-06-23T19:23:50
+mail/arrow1.png59ba4d27cadb93bf9871cdb931e31e9dsize=617date=2023-06-23T19:23:59
+mail/balloonc0.png696f482a61dc72527217d5f03651ea20size=432date=2023-06-23T20:38:03
+mail/balloonc1.png696f482a61dc72527217d5f03651ea20size=432date=2023-06-23T20:38:06
+mail/balloonc2.png696f482a61dc72527217d5f03651ea20size=432date=2023-06-23T20:38:09
+mail/balloonc3.png696f482a61dc72527217d5f03651ea20size=432date=2023-06-23T20:38:12
+mail/balloonk0.pngf142821ef5b2469f8a904e9789421105size=25645date=2023-06-23T18:28:11
+mail/balloonk1.pngf142821ef5b2469f8a904e9789421105size=25645date=2023-06-23T18:28:13
+mail/balloonk10.pngd0ba46962ff5f0acaddfcd34618d7aa7size=36877date=2023-06-23T18:37:46
+mail/balloonk10s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T20:00:20
+mail/balloonk11.pngd0ba46962ff5f0acaddfcd34618d7aa7size=36877date=2023-06-23T18:37:56
+mail/balloonk11s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T20:00:15
+mail/balloonk12.png2612fb469b43eb66cc348f429b3be400size=19127date=2023-06-23T18:38:35
+mail/balloonk12s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T20:00:11
+mail/balloonk13.png2612fb469b43eb66cc348f429b3be400size=19127date=2023-06-23T18:38:38
+mail/balloonk13s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T20:00:03
+mail/balloonk14.pnge49bf7059c45a159d0fce28df63e0b6fsize=18531date=2023-06-23T18:38:44
+mail/balloonk14s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T19:59:59
+mail/balloonk15.pnge49bf7059c45a159d0fce28df63e0b6fsize=18531date=2023-06-23T18:38:46
+mail/balloonk15s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T19:59:36
+mail/balloonk2.png70cbe508c42530a0c7165743ed43eba6size=25180date=2023-06-23T18:29:57
+mail/balloonk3.png70cbe508c42530a0c7165743ed43eba6size=25180date=2023-06-23T18:30:00
+mail/balloonk4.pngda933317889f841f83d5c26cfd361a3csize=19654date=2023-06-23T18:32:07
+mail/balloonk5.pngda933317889f841f83d5c26cfd361a3csize=19654date=2023-06-23T18:32:10
+mail/balloonk6.png2d97a71568c0944bbdd9a58e2755e775size=19299date=2023-06-23T18:32:14
+mail/balloonk7.png2d97a71568c0944bbdd9a58e2755e775size=19299date=2023-06-23T18:32:17
+mail/balloonk8.pngf50737ad648c6cec6b85611838270f08size=37371date=2023-06-23T18:37:39
+mail/balloonk8s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T20:00:23
+mail/balloonk9.pngf50737ad648c6cec6b85611838270f08size=37371date=2023-06-23T18:37:52
+mail/balloonk9s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T20:00:08
+mail/balloons0.pngf142821ef5b2469f8a904e9789421105size=25645date=2023-06-23T18:28:11
+mail/balloons1.pngf142821ef5b2469f8a904e9789421105size=25645date=2023-06-23T18:28:13
+mail/balloons10.pngd0ba46962ff5f0acaddfcd34618d7aa7size=36877date=2023-06-23T18:37:46
+mail/balloons10s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T19:59:16
+mail/balloons11.pngd0ba46962ff5f0acaddfcd34618d7aa7size=36877date=2023-06-23T18:37:56
+mail/balloons11s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T19:59:29
+mail/balloons12.png2612fb469b43eb66cc348f429b3be400size=19127date=2023-06-23T18:38:35
+mail/balloons12s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T19:59:29
+mail/balloons13.png2612fb469b43eb66cc348f429b3be400size=19127date=2023-06-23T18:38:38
+mail/balloons13s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T19:59:28
+mail/balloons14.pnge49bf7059c45a159d0fce28df63e0b6fsize=18531date=2023-06-23T18:38:44
+mail/balloons14s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T19:59:48
+mail/balloons15.pnge49bf7059c45a159d0fce28df63e0b6fsize=18531date=2023-06-23T18:38:46
+mail/balloons15s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T19:59:52
+mail/balloons2.png70cbe508c42530a0c7165743ed43eba6size=25180date=2023-06-23T18:29:57
+mail/balloons3.png70cbe508c42530a0c7165743ed43eba6size=25180date=2023-06-23T18:30:00
+mail/balloons4.pngda933317889f841f83d5c26cfd361a3csize=19654date=2023-06-23T18:32:07
+mail/balloons5.pngda933317889f841f83d5c26cfd361a3csize=19654date=2023-06-23T18:32:10
+mail/balloons6.png2d97a71568c0944bbdd9a58e2755e775size=19299date=2023-06-23T18:32:14
+mail/balloons7.png2d97a71568c0944bbdd9a58e2755e775size=19299date=2023-06-23T18:32:17
+mail/balloons8.pngf50737ad648c6cec6b85611838270f08size=37371date=2023-06-23T18:37:39
+mail/balloons8s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T19:59:40
+mail/balloons9.pngf50737ad648c6cec6b85611838270f08size=37371date=2023-06-23T18:37:52
+mail/balloons9s.txt945b6462aefef30c71fbc471f1e66bacsize=152date=2023-06-23T19:59:55
+mail/danielbd.ttf96157c3ee2ac00fba7cee04cae0b02a2size=63688date=2023-06-23T18:54:22
+mail/descript.txt01c16edaa95bd54b54ef3c1c2ed51997size=1410date=2023-06-23T20:38:23
+mail/install.txtcad27bb0b5adb50ca4c6b19686c51e75size=56date=2023-06-23T18:28:52
+mail/online0.png7894a931b537ab1b2ed9fd814ab377edsize=656date=2023-06-23T19:31:41
+mail/online1.png625c20775207a53ec6cecc0b52aa4ce8size=517date=2023-06-23T19:31:58
+mail/online2.pngc54bf9b2556e7725aad957a130b5ff83size=544date=2023-06-23T19:32:15
+mail/online3.png9aab2e24c6ac0c49f6a928c576078b30size=698date=2023-06-23T19:32:32
+mail/online4.png87adda1708ccf7de59d84691897beeb1size=875date=2023-06-23T19:32:46
+mail/online5.png778b010fa37da64c51d7f5f4ee28263fsize=1120date=2023-06-23T19:33:02
+mail/online6.png6fdbd96e71cff2ab3fb9ea924c72bd66size=1235date=2023-06-23T19:33:13
+mail/online7.png896faf7c37b881bc37e4aa1c0d1fa0eesize=1250date=2023-06-23T19:33:20
+mail/online8.pngebfb13d47b669d594e9c230ebe4ae62bsize=1304date=2023-06-23T19:33:24
+mail/readme.txt4dfbb099eafd3c82e033bf92946d3ce6size=4date=2023-06-23T18:28:43
+mail/sstp.pngdda8475ca1cc262077e796d0647ab830size=1115date=2023-06-23T19:26:51
+readme.txtbab23c30f4c131a0780a6ad39148ecdasize=134date=2023-06-25T17:20:08
+shell/master/descript.txtbf0ae98805996b9c12bfebbad0a0fe55size=164date=2023-06-20T00:14:21
+shell/master/mailbox.clip1d90ae3e7766c5a28082c1b57b9246bbsize=1293606date=2023-06-24T00:15:30
+shell/master/surface0.png59caedd51ad3936aa1150a80a194f814size=15117date=2023-06-20T22:36:37
+shell/master/surface10.png1f7bad21a7cbcef64be19e9c5b590143size=14888date=2023-06-20T23:50:18
+shell/master/surface100.png12a99bfd02428de0e6da303fbb052fe2size=10558date=2023-06-22T01:45:01
+shell/master/surface101.png73a8527ea7db9e8dfdf216164dafcb0esize=19833date=2023-06-22T01:44:58
+shell/master/surface102.pngb7b98b8f67d7da05ee65c5bd67e04194size=28325date=2023-06-22T01:47:07
+shell/master/surface103.png12a44642a81922c81b39f4b7045c0373size=21409date=2023-06-22T01:52:05
+shell/master/surface104.pngacc3b0e2cab65986219b88b2c43ca79dsize=11400date=2023-06-22T02:02:51
+shell/master/surface105.pnga0eb0a91a22181f7afbf1e3e02e9d019size=11401date=2023-06-22T02:01:15
+shell/master/surface11.pngc3597ea5d97d85d9b59e4cb27d6c662asize=2443date=2023-06-20T22:37:13
+shell/master/surface12.png32eab1fd09bdf338043853e22362ac03size=2864date=2023-06-20T22:37:34
+shell/master/surface13.pnge4c1652f8b32a0036e127a5d424ef113size=2925date=2023-06-20T22:37:53
+shell/master/surface14.png2c502eba344335bb6835e00c953ac640size=2551date=2023-06-20T22:44:41
+shell/master/surface15.pngd257d4e5787deb0dee2fa90fcb4151c8size=3073date=2023-06-20T22:45:07
+shell/master/surface20.png13276d65e18e7f34c67beee1bf953b96size=3848date=2023-06-20T22:51:15
+shell/master/surface200.png1512a642d9fb1801528ecb3f853968aesize=3910date=2023-06-25T00:58:31
+shell/master/surface201.pngc1a6a03ecd77db053621188dbe554322size=3864date=2023-06-25T00:58:36
+shell/master/surface202.pngcc3fb2b7f29e91aed663bece0ff0dfcbsize=4059date=2023-06-25T00:58:39
+shell/master/surface203.pngd8f52582d4636e298e73359fca75f02asize=4046date=2023-06-25T00:58:49
+shell/master/surface204.png467bdaeb44b01ced19450be38a938f67size=4047date=2023-06-25T00:58:57
+shell/master/surface205.pngd7c52ad4ddfb7d8fc6bf7f102c346eb0size=3974date=2023-06-25T00:59:04
+shell/master/surface206.png48413ddd3e5a7e2b4c65accb87f36304size=3947date=2023-06-25T00:59:08
+shell/master/surface207.png88ee890aa72e63035caed2fa8bfd5fddsize=4004date=2023-06-25T00:59:13
+shell/master/surface208.png6acbfd4d33ce3228bd175a01794b9230size=3774date=2023-06-25T00:59:23
+shell/master/surface209.png147ebcb60fcfa559b70ba8cec9fbbc5dsize=3618date=2023-06-25T00:59:32
+shell/master/surface21.png9143fa58dab6c615a4cb61a9f5201ba1size=4024date=2023-06-20T23:21:45
+shell/master/surface210.pngf6efa2d0c317864c8d6aa0a389f9e5casize=3750date=2023-06-25T01:00:48
+shell/master/surface211.png6ba2475995f3643979cb47d369f7eeb2size=3901date=2023-06-25T01:01:38
+shell/master/surface212.pngc93b48a2fd371e945ca1021b53aaac8csize=3881date=2023-06-25T01:02:43
+shell/master/surface213.png9a0e271fdf922a80998c2f4e232e06acsize=3510date=2023-06-25T01:05:03
+shell/master/surface214.png1ff886ae0fc5c7aa328a4680dac4476esize=3158date=2023-06-25T01:05:33
+shell/master/surface215.png28289181de43eb6ebbdd9402266cc63dsize=3852date=2023-06-25T01:08:12
+shell/master/surface216.png6e48c192c17b4b9c634eb0024e8579besize=4121date=2023-06-25T02:16:41
+shell/master/surface217.png9b352e622cb92f1f78b79a43926f78bcsize=4148date=2023-06-25T02:18:15
+shell/master/surface22.pngbe3807abe7900466710b103be140e774size=3604date=2023-06-20T23:15:43
+shell/master/surface23.png7189d2c5d7cb51e043cd3f15c20f7b6bsize=2994date=2023-06-20T23:17:25
+shell/master/surface24.pngfbad50fa6cd3b6d3bd1dbe99273428easize=2982date=2023-06-20T23:23:12
+shell/master/surface25.pngb2a4c7116b0e5092168097e451ea8ed2size=3921date=2023-06-20T23:24:46
+shell/master/surface26.png49100b5e259a9035bd4e433af286981esize=3890date=2023-06-20T23:25:05
+shell/master/surface30.pngb861085109f470bda7419c003949d90bsize=3863date=2023-06-21T00:04:25
+shell/master/surface31.png209b6c314df9b88cdda65437e0e587a5size=4159date=2023-06-21T00:09:55
+shell/master/surface32.png5ac26a3389165a27a55bb2768f5a859fsize=4748date=2023-06-21T00:06:25
+shell/master/surface33.png4dd7dd0287f0847038ab5fb322b6e87esize=5158date=2023-06-21T00:07:59
+shell/master/surface34.png06e27b27512cfa8ae1eabf35b669f19asize=4558date=2023-06-21T00:11:31
+shell/master/surface35.png0d56fb9e34f6ed57e2999aa710ee1c1csize=4290date=2023-06-21T00:19:44
+shell/master/surface36.pngade70ba076975f152c01203be015771esize=4463date=2023-06-21T00:19:56
+shell/master/surfaces.txt6e704fbe62f6444c0d3e448daef8f636size=5800date=2023-06-25T02:20:06
+shell/master/surfacetable.txt64022ab54eb82ea22367af01b9a2bdfbsize=83date=2023-06-25T01:11:56
+thumbnail.png82e1984d421478636b1ee3882e4ee265size=37070date=2023-06-25T21:53:22

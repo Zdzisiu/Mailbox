@@ -1,0 +1,120 @@
+SakuraMenuGreetings : all
+{
+	"%(time)"
+	"\0\s[0]"
+	"\i[4]"
+	if ARRAYSIZE(currentMail) == 0; "\i[0]"
+	else; "\i[2]"
+	"* You look into the mailbox"
+
+}
+
+//Because there is an all modifier here, you don't need to write -- between menu options
+OnSakuraMenu : all
+{
+	"\0\s[0]\b[%(RAND(8)+8)]\![set,autoscroll,disable]"
+	SakuraMenuGreetings //The check here is so they won't comment if you click the back button. Remove if you prefer
+
+	//mail
+	if ARRAYSIZE(currentMail) == 0; ", it's empty"
+	elseif ARRAYSIZE(currentMail) == 1; ", there is one letter"
+	else; ", there are %(ARRAYSIZE(currentMail)) letters"
+	"\n\n[half]\_q"
+	for _i = 0; _i <= ARRAYSIZE(currentMail); _i++
+	{
+		"\__q[OnMail," + currentMail[_i] + "]\_b[img/letter (" + currentMail[_i] + ").png,inline,--option=use_self_alpha]\__q"
+
+		if (1+_i)%5==0 && _i != 0; "\n"
+	}
+
+	"\n\n[half]"
+	"\![*]\q[Mail Settings,OnSettings]\n\n[half]"
+	"\![*]\q[Nevermind,]"	
+}
+
+OnSettings: all
+{
+	"\b[%(RAND(8)+8)]%(time)\_q"
+	"Mail Mode:\n\![*]"
+	if mode == "1"; "\f[color,default.anchor]"
+	"\__q[OnStoryMode,1]Normal\__q\f[color,default] - "
+	if mode == "0"; "\f[color,default.anchor]"
+	"\__q[OnStoryMode,0]Story Only\__q\f[color,default]\n\n[half]"
+
+	"Mail Arrival:\n\![*]"
+	if aitalkinterval == 30; "\f[color,default.anchor]"
+	"\__q[OnTalkRateChange,30]30s,\__q\f[color,default] "
+	if aitalkinterval == 60; "\f[color,default.anchor]"
+	"\__q[OnTalkRateChange,60]1m,\__q\f[color,default] "
+	if aitalkinterval == 180; "\f[color,default.anchor]"
+	"\__q[OnTalkRateChange,180]3m,\__q\f[color,default] "
+	if aitalkinterval == 300; "\f[color,default.anchor]"
+	"\__q[OnTalkRateChange,300]5m,\__q\f[color,default] "
+	if aitalkinterval == 600; "\f[color,default.anchor]"
+	"\__q[OnTalkRateChange,600]10m\__q\f[color,default]\n\n[half]"
+
+	"Font:\n\![*]"
+	if font == "default"; "\f[color,default.anchor]"
+	"\__q[OnFontChange,default]Handwriting\__q\f[color,default] - "
+	if font == "noto mono"; "\f[color,default.anchor]"
+	"\__q[OnFontChange,noto mono]Noto Mono\__q\f[color,default]\n\n[half]"
+
+	"Mailbox Size: \q[%(max[0]),script:\![open,sliderinput,OnMailSize,0,20,1,50\]]\n\n[half]"
+
+	"Font Size:\n\![*]"
+	"\__q[OnFontSize,+]larger\__q - "
+	"\__q[OnFontSize,0]default\__q - "
+	"\__q[OnFontSize,-]smaller\__q\f[color,default]\n\n[half]"
+	"\![*]\q[Go Back,OnSakuraMenu]"
+	" or \q[Close,]"
+}
+
+OnStoryMode
+{
+	mode = reference0
+	OnSettings
+}
+
+OnFontSize
+{
+	if reference0 == "-" ; fontSize -= 1
+	elseif reference0 == "+"; fontSize += 1
+	else; fontSize = 0
+
+	OnSettings
+}
+
+OnFontChange
+{
+	font = reference0
+	OnSettings
+}
+
+OnMail:all
+{
+	openMail = TOINT(reference0)
+	"\p[2]\s[%(TOINT(reference0) + 100)]"
+	if openMail == 1 || openMail == 2 || openMail == 4
+	{
+		"\i[%(story[openMail])]"
+	}
+	else
+	{
+		"\i[0]"
+	}
+}
+
+OnTalkRateChange
+{
+	aitalkinterval = TOINT(reference0)
+	OnSettings
+}
+
+EnvelopeTest:all
+{
+	for _i = 1; _i < 7; _i++
+	{
+		"\__q[OnMail,%(_i)]\_b[img/letter (%(_i)).png,inline,--option=use_self_alpha]\__q"
+		if _i%5==0; "\n"
+	}
+}
