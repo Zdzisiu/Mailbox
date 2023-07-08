@@ -1,11 +1,13 @@
 Charset,UTF-8
 __system_settings_version__,2
+scriptbox.left,775
 shiori.debugnotify,0
-Char.VirtualDesktop,e551ccbb-aea2-4470-aa34-4d3b4128f251
+Char.VirtualDesktop,b7f3cce3-7fc8-4247-a391-f091e24c2325
+Char2.center,1240
 Char0.center,1570
+scriptbox.top,532
 shell,shell\master\
 FirstBoot,booted
 Char1.center,1405
 shell.ischanged.2,1
-DeveloperPalette.visible,1
 __system_written_flag_do_not_remove__,written

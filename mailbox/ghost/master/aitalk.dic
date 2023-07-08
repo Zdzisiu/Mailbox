@@ -55,7 +55,7 @@ OnStory : all
 {
 	_num = TOINT(openMail)
 	if story[_num] == ""; story[_num] = 0
-	"\p[2]"
+	"\p[2]\s[-2]"
 
 	switch _num-1
 	{
@@ -67,8 +67,6 @@ OnStory : all
 		"%(ToAnyoneWhoWillListen(story[_num]))"
 	}
 
-	"\x\p[2]\s[-1]"
-
 	_mailNum = ASEARCH(_num,currentMail)
 	currentMail[_mailNum] = ""
 	currentMail = SPLITEX("%(currentMail)",",")
@@ -77,8 +75,8 @@ OnStory : all
 		if ASEARCH(_num,oldMail) == -1; oldMail ,= _num
 	}
 
-	if ARRAYSIZE(currentMail) == 0; "\0\s[0]\i[7]\i[6]"
-	else; "\0\s[0]\i[7]\i[2]"
+	if ARRAYSIZE(currentMail) == 0; "\0\i[6]"
+	else; "\0\i[2]"
 	story[_num]++
 }
 

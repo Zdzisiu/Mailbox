@@ -1,25 +1,26 @@
 SakuraMenuGreetings : all
 {
 	"%(time)"
-	"\0\s[0]"
-	"\i[4]"
+	"\0"
+	if open[0] != 1; "\i[4]"
 	if ARRAYSIZE(currentMail) == 0; "\i[0]"
 	else; "\i[2]"
 	"* You look into the mailbox"
+	open[0] = 1
 
 }
 
 //Because there is an all modifier here, you don't need to write -- between menu options
 OnSakuraMenu : all
 {
-	"\0\s[0]\b[%(RAND(8)+8)]\![set,autoscroll,disable]"
+	"\p[2]\s[-2]\0\b[%(RAND(8)+8)]\![set,autoscroll,disable]\_q"
 	SakuraMenuGreetings //The check here is so they won't comment if you click the back button. Remove if you prefer
 
 	//mail
 	if ARRAYSIZE(currentMail) == 0; ", it's empty"
 	elseif ARRAYSIZE(currentMail) == 1; ", there is one letter"
 	else; ", there are %(ARRAYSIZE(currentMail)) letters"
-	"\n\n[half]\_q"
+	"\n\n[half]"
 	for _i = 0; _i <= ARRAYSIZE(currentMail); _i++
 	{
 		"\__q[OnMail," + currentMail[_i] + "]\_b[img/letter (" + currentMail[_i] + ").png,inline,--option=use_self_alpha]\__q"
@@ -29,12 +30,20 @@ OnSakuraMenu : all
 
 	"\n\n[half]"
 	"\![*]\q[Mail Settings,OnSettings]\n\n[half]"
-	"\![*]\q[Nevermind,]"	
+	"\![*]\q[Nevermind,OnCanel,0]"
+}
+
+OnCanel
+{
+	_num = TOINT(reference0)
+	open[_num] = 0
+	if reference0 == "0"; "\0\i[7]"
+	else; "\1\i[3]"
 }
 
 OnSettings: all
 {
-	"\b[%(RAND(8)+8)]%(time)\_q"
+	"\b[%(RAND(8)+8)]%(time)\![set,autoscroll,disable]\_q"
 	"Mail Mode:\n\![*]"
 	if mode == "1"; "\f[color,default.anchor]"
 	"\__q[OnStoryMode,1]Normal\__q\f[color,default] - "
@@ -53,11 +62,7 @@ OnSettings: all
 	if aitalkinterval == 600; "\f[color,default.anchor]"
 	"\__q[OnTalkRateChange,600]10m\__q\f[color,default]\n\n[half]"
 
-	"Font:\n\![*]"
-	if font == "default"; "\f[color,default.anchor]"
-	"\__q[OnFontChange,default]Handwriting\__q\f[color,default] - "
-	if font == "noto mono"; "\f[color,default.anchor]"
-	"\__q[OnFontChange,noto mono]Noto Mono\__q\f[color,default]\n\n[half]"
+	"Font: \![*] \f[color,default.anchor]\__q[OnFontMenu]%(font)\__q\f[color,default]\n\n[half]"
 
 	"Mailbox Size: \q[%(max[0]),script:\![open,sliderinput,OnMailSize,0,20,1,50\]]\n\n[half]"
 
@@ -66,7 +71,31 @@ OnSettings: all
 	"\__q[OnFontSize,0]default\__q - "
 	"\__q[OnFontSize,-]smaller\__q\f[color,default]\n\n[half]"
 	"\![*]\q[Go Back,OnSakuraMenu]"
-	" or \q[Close,]"
+	" or \q[Close,OnCanel,0]"
+}
+
+OnFontMenu:all
+{
+	"\b[%(RAND(8)+8)]%(time)\![set,autoscroll,disable]\_qChoose font:\n\n[half]"
+	"\![*]\__q[OnFontChange,default]Default Font\__q\n\n[half]"
+
+	for _i=0;_i<ARRAYSIZE(avalibleFonts);_i++
+	{
+		"\![*]\__q[OnFontChange,"+avalibleFonts[_i]+"]"+avalibleFonts[_i]+"\__q\n"
+	}
+
+	"\n[half]\![*]\q[Go Back,OnSettings]"
+}
+
+OnNotifyFontInfo
+{
+	avalibleFonts = reference
+}
+
+OnMailSize
+{
+	max[0] = reference0
+	OnSettings
 }
 
 OnStoryMode
@@ -87,7 +116,7 @@ OnFontSize
 OnFontChange
 {
 	font = reference0
-	OnSettings
+	OnFontMenu
 }
 
 OnMail:all

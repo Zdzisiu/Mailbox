@@ -1,7 +1,9 @@
 OnKeroMenu : all
 {
-	"\1\s[10]\i[1]\b[%(RAND(8)+8)]%(time)\![set,autoscroll,disable]* You look into the mail box "
-	"\n\n[half]\_q"
+	"\1\b[%(RAND(8)+8)]%(time)\![set,autoscroll,disable]\_q"
+	if open[1] != 1; "\i[1]"
+	"* You look into the mail box "
+	"\n\n[half]"
 
 	for _a = 0; _a < ARRAYSIZE(oldMail); _a++
 	{
@@ -39,7 +41,8 @@ OnKeroMenu : all
 			}
 		}
 	}
-	"\n\n[half]\![*]\q[Nevermind,]"
+	open[1] = 1
+	"\n\n[half]\![*]\q[Nevermind,OnCanel,1]"
 }
 
 OnOldStory

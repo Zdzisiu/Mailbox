@@ -28,12 +28,32 @@ OnKeyPress
 //Happens about 30 seconds after a script ends, by default, to bring them back to normal poses
 OnSurfaceRestore
 {
-	_mailbox = "\0\s[0]\i[3]"
-	_mailBox = "\1\s[10]\i[0]"
+	_mailbox = ""
+	_mailBox = ""
+	--
+	if open[0] == 1
+	{
+		_mailbox = "\0\s[0]\i[7]"
+		open[1] = 0
+	}
+	else; _mailbox = "\0\s[0]\i[3]"
+
+	if open[1] == 1;
+	{
+		_mailBox = "\1\s[10]\i[2]"
+		open[0] = 0
+	}
+	else; _mailBox = "\1\s[10]\i[0]"
 	if ARRAYSIZE(currentMail) == 0; _mailbox += "\i[0]"
 	else; _mailbox += "\i[2]"
 
 	_mailbox + _mailBox
+}
+
+OnWindowStateMinimize
+{
+	open[0] = 0
+	open[1] = 0
 }
 
 OnWindowStateRestore
